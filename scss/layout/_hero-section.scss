@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: url(/img/hero-bg.jpg);
+  background-image: url(img/hero-bg.jpg);
   background-size: cover;
 
   &__container {
@@ -89,7 +89,9 @@
   }
 
   &__card-link {
-    transition: opacity 0.3s, max-height 0.3s;
+    transition:
+      opacity 0.3s,
+      max-height 0.3s;
     display: flex;
     align-items: center;
     gap: 7px;
