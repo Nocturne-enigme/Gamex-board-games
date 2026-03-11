@@ -1,0 +1,124 @@
+.hero-section {
+  background-image: url(/img/hero-bg.jpg);
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    position: relative;
+  }
+
+  &__block {
+    padding: 220px 0;
+    max-width: 436px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    width: 280px;
+    // height: 166px;
+    border-radius: 15px;
+    background-color: rgba(9, 71, 130, 0.45);
+    border: 2px solid var(--secondary-border);
+    padding: 24px 24px;
+
+    :hover .hero-section__card-link {
+      opacity: 1;
+      max-height: 25px;
+    }
+  }
+
+  &__card-stories {
+    top: 205px;
+    right: 260px;
+
+    @media screen and (max-width: 1280px) {
+      right: 180px;
+    }
+  }
+
+  &__card-discounts {
+    top: 420px;
+    right: 0px;
+  }
+  &__card-wrapper {
+    max-width: 216px;
+  }
+  &__card-collections {
+    top: 500px;
+    right: 360px;
+
+    @media screen and (max-width: 1280px) {
+      right: 320px;
+    }
+  }
+
+  &__card-icon {
+    fill: #274966;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    // right: 5px;
+    right: 0;
+
+    &--stories {
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: 14px; // why not 20px
+  }
+
+  &__card-text {
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  &__card-link {
+    transition: opacity 0.3s, max-height 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    bottom: 20px;
+    opacity: 0;
+    max-height: 0;
+  }
+
+  &__card-caption {
+    font-weight: 500;
+    font-size: 13px;
+    // font-family: "Jost", sans-serif;
+  }
+  &__card-thumb {
+    background: black;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+  }
+  &__icon-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-medium-blue);
+  }
+  &__arrow {
+    fill: var(--main-beige);
+  }
+}

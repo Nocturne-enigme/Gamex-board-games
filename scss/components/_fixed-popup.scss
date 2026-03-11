@@ -1,0 +1,33 @@
+.fixed-popup {
+  display: flex;
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  max-width: 124px;
+  padding: 7px 14px;
+  border-radius: 12px;
+  align-items: center;
+  gap: 6px;
+
+  ::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    transform: rotate(45deg);
+  }
+  &__text {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--primary-dark-blue);
+  }
+
+  &__icon {
+    fill: var(--primary-dark-blue);
+  }
+}

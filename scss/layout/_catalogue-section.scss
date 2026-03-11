@@ -1,0 +1,178 @@
+.catalogue-section {
+  &__title {
+    margin-bottom: 58px;
+  }
+
+  &__bar {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__link {
+    background-color: var(--secondary-medium-blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--primary-dark-blue);
+      color: inherit;
+    }
+  }
+}
+
+.product-list {
+  display: grid;
+  gap: 30px 22px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.product-card {
+  display: grid;
+  background-color: var(--secondary-card-blue);
+  border-radius: 10px;
+  max-width: 320px;
+  padding: 20px;
+
+  &__label {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 10px;
+
+    // background-color: var(--primary-blue);
+
+    // add through background
+    // background: url(/img/icons/badge-icon.svg);
+    // background-repeat: no-repeat;
+    // width: 100px;
+    // height: 21px;
+    color: var(--primary-dark-blue);
+
+    &--accent {
+      color: var(--tetriary-light-green);
+      margin-bottom: 12px;
+    }
+  }
+  &__badge-icon {
+    fill: var(--primary-blue);
+    position: absolute;
+  }
+  &__sun-icon {
+    fill: var(--primary-dark-blue);
+  }
+
+  &__like-icon {
+    display: block;
+    stroke: var(--main-beige);
+    transition: fill 0.3s;
+  }
+  &__like-btn {
+    // all: unset;
+    cursor: pointer;
+
+    &:hover .product-card__like-icon {
+      fill: var(--main-beige);
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__price {
+    // font-family: "Jost", sans-serif;
+    color: var(--tetriary-light-green);
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  &__old-price {
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 800;
+    color: #8c9f8e;
+  }
+  &__description-block {
+    display: flex;
+    max-width: 220px;
+    gap: 2px;
+  }
+  &__reviews {
+    font-weight: 400;
+    min-width: 110px; // not the best solution
+    font-size: 12px;
+  }
+  &__text {
+    margin-bottom: 16px;
+    font-size: 14px;
+    max-width: 218px;
+  }
+
+  &__img {
+    max-height: 170px;
+    justify-self: center;
+  }
+  &__bottom-price {
+    display: flex;
+    gap: 4px;
+  }
+  &__info-icon {
+    fill: var(--main-beige);
+  }
+  &__bottom {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__top-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    z-index: 2;
+    padding-left: 8px;
+  }
+
+  &__top-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+  }
+
+  &__wrapper {
+    display: grid;
+    place-items: center;
+  }
+  &__block {
+    display: grid;
+    justify-items: start;
+  }
+
+  &__button {
+    background-color: var(--tetriary-button-blue);
+    color: var(--primary-blue);
+    padding: 10px 64px;
+    font-size: 15px;
+    border: 1px solid var(--primary-blue);
+    margin: 0 auto;
+    // display: block;
+    justify-self: center;
+    transition: background-color 0.3s;
+
+    &:hover {
+      color: var(--tetriary-button-blue);
+      background-color: var(--primary-blue);
+    }
+  }
+}

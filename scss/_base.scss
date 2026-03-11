@@ -1,0 +1,188 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior: smooth;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+// * {
+//   outline: 1px solid red;
+// }
+
+body {
+  font-family: "Jost", sans-serif;
+  color: var(--main-beige);
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: var(--main-bg-color);
+  //   background-color: var(--primary-light);
+  //   line-height: 1.5;
+  //   font-size: 14px;
+  //   font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.button {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+ul,
+li,
+ol,
+p {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+// img {
+//   width: 100%;
+//   height: auto;
+//   display: block;
+//   object-fit: cover;
+// }
+
+a {
+  display: block;
+}
+
+// Section styles
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section {
+  padding: 40px 0;
+}
+.section-title {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.blue-action {
+  background: linear-gradient(90deg, #c9e7f8, #85acfa);
+  color: transparent;
+  background-clip: text;
+}
+
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-beige);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--primary-accent);
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+// buttons
+
+.button {
+  letter-spacing: 0.03em;
+  transition: all 0.3s;
+  // background-color: var(--primary-accent);
+  // color: var(--primary-dark-blue);
+  color: var(--primary-blue);
+  background-color: var(--primary-dark-blue);
+  border: 1px solid var(--primary-blue);
+  padding: 14px 60px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: var(--primary-accent);
+    color: var(--primary-dark-blue);
+  }
+}
+
+.button-secondary {
+  // color: var(--secondary-dark);
+  padding: 10px 34px;
+  font-size: 15px;
+
+  &--outlined {
+    color: #ffffff;
+    background-color: transparent;
+    // border: 1px solid var(--primary-accent);
+    padding: 10px 32px;
+    font-size: 15px;
+  }
+}
+
+// cards
+
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.text-jost-regular {
+  font-weight: 400;
+  font-family: "Jost";
+}
+.input {
+  text-transform: capitalize;
+}
+.input:focus,
+.input:not(:placeholder-shown) {
+  border: 2px solid transparent; // must be transparent
+  background:
+    linear-gradient(#02101e, #02101e) padding-box,
+    // inner (fake) background
+    linear-gradient(
+        128deg,
+        rgba(149, 177, 231, 0.8) 0%,
+        rgba(204, 229, 244, 0.8) 100%
+      )
+      border-box; // outer gradient (border)
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  outline: none;
+}

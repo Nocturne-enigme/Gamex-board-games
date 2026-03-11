@@ -1,0 +1,113 @@
+.footer {
+  padding: 60px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px; // for now
+    gap: 20px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__nav-wrapper {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+  }
+  &__text {
+    margin-bottom: 12px;
+  }
+  &__nav-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    :hover {
+      color: var(--secondary-border);
+    }
+  }
+
+  &__item {
+    color: var(--tetriary-grey);
+    font-size: 14px;
+
+    &:hover {
+      color: var(--primary-accent);
+    }
+  }
+
+  &__item-ribbon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__ribbon {
+    background: #607d93;
+    align-items: center;
+    align-content: center;
+    padding: 0px 18px 2px;
+    border-radius: 6px;
+  }
+
+  &__ribbon-text {
+    font-size: 9px;
+    font-family: "Raleway", sans-serif;
+    color: var(--main-beige);
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &__socials {
+    fill: var(--main-beige);
+    display: flex;
+    gap: 16px;
+  }
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 14px;
+
+    &::placeholder {
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      color: #9b9b9b;
+    }
+  }
+
+  &__input-block {
+    display: flex;
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__form-button {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: var(--tetriary-grey);
+  }
+
+  &__form-icon {
+    fill: var(--tetriary-grey);
+  }
+
+  &__legal {
+    display: flex;
+    gap: 14px;
+    font-weight: 400;
+    font-size: 8px;
+    justify-content: center;
+  }
+
+  &__legal-item {
+    color: var(--tetriary-grey);
+  }
+}

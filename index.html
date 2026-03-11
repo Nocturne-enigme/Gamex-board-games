@@ -1,0 +1,1229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamex Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a class="link" href="#games-section">Games</a></li>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#popular-section">Popular</a></li>
+            <li><a class="link" href="#events-section">Events</a></li>
+            <li><a class="link" href="#contact-section">Contact Us</a></li>
+          </ul>
+          <a href="/">
+            <img src="/img/website-logo.svg" alt="Gamex Logo" />
+          </a>
+          <!-- Input -->
+          <form class="header__form">
+            <label for="search" class="visually-hidden">Search</label>
+            <div class="header__search">
+              <svg class="header__search-icon" width="20" height="20">
+                <use href="/img/symbol-icons.svg#search-icon"></use>
+              </svg>
+              <input
+                class="header__input"
+                id="search"
+                type="search"
+                placeholder="Search..."
+              />
+            </div>
+          </form>
+          <button class="button header__button modal-btn-open" type="button">
+            Log in
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <div class="hero-section__block">
+              <h1 class="hero-section__title">
+                Unleash the Fun with the
+                <span class="blue-action">Board Game</span> bliss
+              </h1>
+              <p class="hero-section__text">
+                Explore our new collections of popular games and let the good
+                times roll
+              </p>
+              <button class="button" type="button">Add to cart</button>
+            </div>
+            <div class="hero-section__cards">
+              <div class="hero-section__card hero-section__card-stories">
+                <div class="hero-section__card-wrapper">
+                  <h4 class="card-title hero-section__card-title">
+                    Fun Stories
+                  </h4>
+                  <p class="hero-section__card-text">
+                    Explore our collections of popular games and let the good
+                    times roll!
+                  </p>
+                  <!-- links -->
+                  <a class="hero-section__card-link" href="#">
+                    <img
+                      class="hero-section__card-thumb"
+                      src="/img/hero-card-link-img.jpg"
+                      alt=""
+                    />
+                    <p class="hero-section__card-caption text-jost-regular">
+                      Explore stories
+                    </p>
+                    <div class="hero-section__icon-circle">
+                      <svg class="hero-section__arrow" width="9" height="9">
+                        <use href="/img/symbol-icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <svg
+                  class="hero-section__card-icon hero-section__card-icon--stories"
+                  width="27"
+                  height="66"
+                >
+                  <use href="/img/symbol-icons.svg#fun-stories-icon "></use>
+                </svg>
+              </div>
+              <div class="hero-section__card hero-section__card-discounts">
+                <div class="hero-section__card-wrapper">
+                  <h4 class="card-title hero-section__card-title">
+                    Current discounts
+                  </h4>
+                  <p class="hero-section__card-text">
+                    Stay Informed and Connected Subscribe now to get 10% off
+                  </p>
+                  <a class="hero-section__card-link" href="#">
+                    <img
+                      class="hero-section__card-thumb"
+                      src="/img/hero-card-link-img.jpg"
+                      alt=""
+                    />
+                    <p class="hero-section__card-caption text-jost-regular">
+                      Find more
+                    </p>
+                    <div class="hero-section__icon-circle">
+                      <svg class="hero-section__arrow" width="9" height="9">
+                        <use href="/img/symbol-icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <svg class="hero-section__card-icon" width="68" height="68">
+                  <use href="/img/symbol-icons.svg#discounts-icon"></use>
+                </svg>
+              </div>
+              <div class="hero-section__card hero-section__card-collections">
+                <div class="hero-section__card-wrapper">
+                  <h4 class="card-title hero-section__card-title">
+                    New collections
+                  </h4>
+                  <p class="hero-section__card-text">
+                    Discover our latest collections of popular games and the fun
+                    begins!
+                  </p>
+                  <a class="hero-section__card-link" href="#">
+                    <img
+                      class="hero-section__card-thumb"
+                      src="/img/hero-card-link-game-img.jpg"
+                      alt=""
+                    />
+                    <p class="hero-section__card-caption text-jost-regular">
+                      Go to games
+                    </p>
+                    <div class="hero-section__icon-circle">
+                      <svg class="hero-section__arrow" width="9" height="9">
+                        <use href="/img/symbol-icons.svg#arrow-link"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <svg class="hero-section__card-icon" width="75" height="67">
+                  <use href="/img/symbol-icons.svg#new-collections-icon"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section categories-section">
+        <div class="container">
+          <h2 class="section-title categories-section__title">
+            Popular categories
+          </h2>
+          <ul class="categories-section__list">
+            <li class="categories-section__item">
+              <article class="categories-card">
+                <img
+                  class="categories-card__icon"
+                  src="/img/icons/all-g-icon.svg"
+                  alt="All games"
+                />
+                <h6 class="categories-card__title">All</h6>
+                <p class="categories-card__text">3254 games</p>
+              </article>
+            </li>
+            <li class="categories-section__item">
+              <article class="categories-card">
+                <img
+                  class="categories-card__icon"
+                  src="/img/icons/g-f-2-icon.svg"
+                  alt="Games for 2"
+                />
+                <h6 class="categories-card__title">Games for 2</h6>
+                <p class="categories-card__text">325 games</p>
+              </article>
+            </li>
+            <li class="categories-section__item">
+              <article class="categories-card">
+                <img
+                  class="categories-card__icon"
+                  src="/img/icons/kids-g-icon.svg"
+                  alt="Kids games"
+                />
+                <h6 class="categories-card__title">Kids games</h6>
+                <p class="categories-card__text">3254 games</p>
+              </article>
+            </li>
+            <li class="categories-section__item">
+              <article class="categories-card">
+                <img
+                  class="categories-card__icon"
+                  src="/img/icons/party-g-icon.svg"
+                  alt="Party time"
+                />
+                <h6 class="categories-card__title">Party time</h6>
+                <p class="categories-card__text">144 games</p>
+              </article>
+            </li>
+            <li class="categories-section__item">
+              <article class="categories-card">
+                <img
+                  class="categories-card__icon"
+                  src="/img/icons/get-drunk-g-icon.svg"
+                  alt="Drinking games"
+                />
+                <h6 class="categories-card__title">Get drunk</h6>
+                <p class="categories-card__text">48 games</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section advertisement-section">
+        <div class="container">
+          <div class="advertisement-cards">
+            <div class="advertisement-card-big">
+              <h2 class="section-title advertisement-section__title">
+                Get your <span class="blue-action">free delivery</span>
+              </h2>
+              <p class="advertisement-card-big__text">
+                while ordering from $60
+              </p>
+              <div class="advertisement-card-big__buttons">
+                <button class="button button-secondary" type="button">
+                  Order now
+                </button>
+                <button
+                  type="button"
+                  class="button button-secondary--outlined"
+                  type="button"
+                >
+                  More sales
+                </button>
+              </div>
+            </div>
+            <div class="advertisement-card-small">
+              <h2 class="advertisement-card-small__title">Already here!</h2>
+              <div class="advertisement-card-small__block">
+                <!-- Img -->
+                <img src="/img/bagdar-card-item.png" alt="Bagdar Game" />
+                <div class="advertisement-card-small__container">
+                  <h3 class="advertisement-card-small__title-description">
+                    Preorder Bagdar now!
+                  </h3>
+                  <p class="advertisement-card-small__text text-jost-regular">
+                    Orders starts
+                    <span class="blue-action"> May 17- May 28</span>
+                  </p>
+                  <button class="button button-secondary" type="button">
+                    Get now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section popular-games" id="popular-section">
+        <div class="container">
+          <h2 class="section-title popular-games__title">Popular Games</h2>
+          <ul class="popular-games__list">
+            <li>
+              <article
+                class="game-wide-card"
+                style="background-image: url(/img/q-learning-bg.jpg)"
+              >
+                <div class="game-wide-card__block">
+                  <h4 class="card-title game-wide-card__title">Q-Learning</h4>
+                  <p class="text-jost-regular">
+                    AI-driven game where strategy and adaptivity pave the path
+                    to victory
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article
+                class="game-wide-card"
+                style="
+                  background-image: url(/img/popular-games-gadeiar-wonders.jpg);
+                "
+              >
+                <div class="game-wide-card__block">
+                  <h4 class="card-title game-wide-card__title">
+                    Gadeiar Wonders
+                  </h4>
+                  <p class="text-jost-regular">
+                    The ultimate deck and captivating mystical realms on your
+                    board today
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article
+                class="game-wide-card"
+                style="background-image: url(/img/popular-games-chess.jpg)"
+              >
+                <div class="game-wide-card__block">
+                  <h4 class="card-title game-wide-card__title">
+                    Chess Board game
+                  </h4>
+                  <p class="text-jost-regular">
+                    The classic battle of wits and strategy, now with modern
+                    twists
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article
+                class="game-wide-card"
+                style="background-image: url(/img/popular-games-rootroy.jpg)"
+              >
+                <div class="game-wide-card__block">
+                  <h4 class="card-title game-wide-card__title">Rootroy</h4>
+                  <p class="text-jost-regular">
+                    A world of hidden roots and royal secrets in a captivating
+                    strategy game
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article
+                class="game-wide-card"
+                style="
+                  background-image: url(/img/popular-games-heal-my-eillek.jpg);
+                "
+              >
+                <div class="game-wide-card__block">
+                  <h4 class="card-title game-wide-card__title">
+                    Heal my Eillek
+                  </h4>
+                  <p class="text-jost-regular">
+                    A cryptic adventure filled with enigmatic symbols and hidden
+                    meanings
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article
+                class="game-wide-card"
+                style="background-image: url(/img/popular-games-bald-amis.jpg)"
+              >
+                <div class="game-wide-card__block">
+                  <h4 class="card-title game-wide-card__title">Bald Amis</h4>
+                  <p class="text-jost-regular">
+                    A mythical realm of alliances and conflicts in a captivating
+                    board game
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section catalogue-section" id="games-section">
+        <div class="container">
+          <h2 class="section-title catalogue-section__title">All games</h2>
+          <div class="catalogue-section__bar">
+            <!-- Input -->
+            <ul class="catalogue-section__list">
+              <li>
+                <a class="link catalogue-section__link" href="#">Adventure</a>
+              </li>
+              <li>
+                <a class="link catalogue-section__link" href="#">Strategy</a>
+              </li>
+              <li>
+                <a class="link catalogue-section__link" href="#">Popular</a>
+              </li>
+              <li>
+                <a class="link catalogue-section__link" href="#">New games</a>
+              </li>
+            </ul>
+            <!-- Dropdown -->
+            <!-- Popup -->
+          </div>
+          <ul class="product-list">
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-monopoly.png"
+                  alt="Monopoly Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p class="product-card__label product-card__label--accent">
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Monopoly GO </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          New updated game in the version of masters.
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$67</p>
+                        <p class="product-card__old-price">$172</p>
+                      </div>
+                      <p class="product-card__reviews">4.9 ★ (24 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-shadowverse.png"
+                  alt="Shadowverse Legend"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p
+                      class="product-card__label product-card__label--accent hidden"
+                    >
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Shadowverse Legend </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          Fantastical realm of strategy and chanting adventure.
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$167</p>
+                        <p class="product-card__old-price">$192</p>
+                      </div>
+                      <p class="product-card__reviews">4.9 ★ (24 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label hidden">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-interesting-journey.png"
+                  alt="Interesting Journey Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p class="product-card__label product-card__label--accent">
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Interesting Journey </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          An epic quest with unexpected twists and moments.
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$72</p>
+                        <p class="product-card__old-price">$98</p>
+                      </div>
+                      <p class="product-card__reviews">4.8 ★ (13 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-gadeiar-wonders.png"
+                  alt="Gadeiar Wonders Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p
+                      class="product-card__label product-card__label--accent hidden"
+                    >
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Gadeiar Wonders </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          The ultimate deck and mystical realms on your board
+                          today.
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$89</p>
+                        <p class="product-card__old-price">$254</p>
+                      </div>
+                      <p class="product-card__reviews">4.9 ★ (24 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-bagdar.png"
+                  alt="Bagdar Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p class="product-card__label product-card__label--accent">
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Bagdar </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          Treacherous terrains and cunning opponents a survival.
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$112</p>
+                        <p class="product-card__old-price">$154</p>
+                      </div>
+                      <p class="product-card__reviews">4.9 ★ (78 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label hidden">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-legends-of-eldoria.png"
+                  alt="Legends of Eldoria Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p class="product-card__label product-card__label--accent">
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Legends of Eldoria </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          Ancient civilizations and mystical artifacts
+                          immersive...
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$45</p>
+                        <p class="product-card__old-price">$98</p>
+                      </div>
+                      <p class="product-card__reviews">4.3 ★ (17 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">Available now</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-mystic-realms.png"
+                  alt="Mystic Realms Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p
+                      class="product-card__label product-card__label--accent hidden"
+                    >
+                      New in stock
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Mystic Realms</a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          Sparkling challenges of matching and collecting...
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$112</p>
+                        <p class="product-card__old-price">$282</p>
+                      </div>
+                      <p class="product-card__reviews">3.9 ★ (65 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-card__top">
+                  <span class="product-card__label">
+                    <svg
+                      class="product-card__badge-icon"
+                      width="100"
+                      height="21"
+                    >
+                      <use href="/img/symbol-icons.svg#badge-icon"></use>
+                    </svg>
+                    <div class="product-card__top-icons">
+                      <svg
+                        class="product-card__sun-icon"
+                        width="10"
+                        height="10"
+                      >
+                        <use href="/img/symbol-icons.svg#sun-icon"></use>
+                      </svg>
+                      <span class="product-card__top-text">New edition</span>
+                    </div>
+                  </span>
+                  <button class="product-card__like-btn">
+                    <svg class="product-card__like-icon" width="20" height="20">
+                      <use href="/img/symbol-icons.svg#like-heart-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+                <img
+                  class="product-card__img"
+                  src="/img/product-card/product-card-badet-adtalo.png"
+                  alt="Badet Adtalo Game"
+                />
+                <div class="product-card__wrapper">
+                  <div class="product-card__block">
+                    <p class="product-card__label product-card__label--accent">
+                      Newest popular
+                    </p>
+                    <div class="product-card__description">
+                      <h4 class="card-title"><a>Badet Adtalo </a></h4>
+                      <div class="product-card__description-block">
+                        <p class="product-card__text text-jost-regular">
+                          Mysteries of a forgotten world in an enchanting
+                          journey.
+                        </p>
+                        <a class="product-card__info-icon">
+                          <svg width="15" height="15">
+                            <use href="/img/symbol-icons.svg#info-icon"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="product-card__bottom">
+                      <div class="product-card__bottom-price">
+                        <p class="product-card__price">$23.99</p>
+                        <p class="product-card__old-price">$65.99</p>
+                      </div>
+                      <p class="product-card__reviews">4.5 ★ (114 reviews)</p>
+                    </div>
+                    <button type="button" class="button product-card__button">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section events-section" id="events-section">
+        <div class="container">
+          <div class="events-section__top-bar">
+            <h2 class="section-title events-section__title">Our events</h2>
+            <!-- dropdown -->
+            <!-- modal popup -->
+          </div>
+          <p class="events-section__text">
+            Visit one of the thousand adventurous board game parties and bring
+            your friends
+            <!--change text settings -->
+          </p>
+          <div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="events-section__cards">
+                    <article class="event-card event-card--halloween">
+                      <img
+                        class="event-card__image"
+                        src="/img/event-card-party.jpg"
+                        alt="Halloween Party Event"
+                      />
+                      <div class="event-card__content">
+                        <div class="event-card__description">
+                          <h3 class="event-card__title">Halloween Night</h3>
+                          <a class="event-card__date">12th-13 July</a>
+                        </div>
+                        <div class="event-card__price">
+                          <p href="#">Member price: 15$</p>
+                          <p href="#">Regular price: 38$</p>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="event-card">
+                      <img
+                        class="event-card__image"
+                        src="/img/event-card-festival.jpg"
+                        alt="Rock Game festival"
+                      />
+                      <div class="event-card__content">
+                        <div class="event-card__description">
+                          <h3 class="event-card__title">Rock game festival</h3>
+                          <a class="event-card__date">14th-18 July</a>
+                        </div>
+                        <div class="event-card__price">
+                          <p href="#">Member price: 19$</p>
+                          <p href="#">Regular price: 48$</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="events-section__cta">
+            <a href="#"
+              >Join our membership plan and have lots of fun all 365 days a year
+            </a>
+            <!-- icon button -->
+          </div>
+        </div>
+      </section>
+      <section class="section contacts-section" id="contact-section">
+        <div class="container">
+          <h2 class="section-title contacts-section__title-main">Contact us</h2>
+          <div class="contacts-section__wrapper">
+            <div class="contacts-section__form">
+              <div class="contacts-section__text">
+                <h3 class="contacts-section__title">
+                  Not sure <span class="blue-action">what you want?</span> Ask
+                  for help!
+                </h3>
+                <p class="text-jost-regular">
+                  If you are looking for custom designs or want to find a game
+                  that will be perfect for you, talk to us!
+                </p>
+              </div>
+              <form name="contact-form" autocomplete="on" action="#">
+                <label class="contact-form__label">
+                  <span class="contact-form__label-text">Name</span>
+                  <input
+                    class="input contact-form__input"
+                    type="text"
+                    placeholder="Type in your name ..."
+                    required
+                  />
+                </label>
+                <label class="contact-form__label">
+                  <span class="contact-form__label-text">Phone number</span>
+                  <input
+                    class="input contact-form__input"
+                    type="tel"
+                    placeholder="+1 ( ... ) ... ..."
+                    required
+                  />
+                </label>
+                <label class="contact-form__label">
+                  <span class="contact-form__label-text"
+                    >Question/ Message</span
+                  >
+                  <input
+                    class="input contact-form__input"
+                    type="text"
+                    placeholder="I'm having issues..."
+                    required
+                  />
+                </label>
+                <button type="submit" class="button contact-form__button">
+                  Submit
+                </button>
+                <p class="contact-form__policy">
+                  By submitting this form, you acknowledge receipt of our
+                  company Privacy and Policy.
+                </p>
+              </form>
+            </div>
+            <div class="contacts-section__imagery">
+              <img
+                class="contacts-section__decor"
+                src="/img/contact-phone.png"
+                alt="Phone"
+                aria-hidden="true"
+              />
+              <img
+                class="contacts-section__img"
+                src="/img/contacts-sadman.jpg"
+                alt="Confussed Man"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__signup-wrapper">
+            <div class="footer__signup">
+              <h2 class="footer__title">Sign up for 10% off</h2>
+              <p class="text-jost-regular footer__text">
+                Subscribe to get special offers and deals
+              </p>
+              <form action="">
+                <label for="footer-email" class="visually-hidden">
+                  Email address
+                </label>
+                <div class="footer__input-block">
+                  <input
+                    class="input footer__input"
+                    type="email"
+                    id="footer-email"
+                    name="footer-email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="footer__form-button"
+                    aria-label="Submit email"
+                  >
+                    <svg class="footer__form-icon" width="14" height="14">
+                      <use href="/img/symbol-icons.svg#arrow-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="footer__socials">
+              <a href="#">
+                <svg class="footer__socials-icon" width="25" height="25">
+                  <use href="/img/symbol-icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__socials-icon" width="25" height="25">
+                  <use href="/img/symbol-icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__socials-icon" width="25" height="25">
+                  <use href="/img/symbol-icons.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-wrapper">
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">About us</a></h3>
+              <ul>
+                <li class="footer__item"><a>Our story</a></li>
+                <li class="footer__item"><a>Made with care</a></li>
+                <li class="footer__item footer__item-ribbon">
+                  <a>Blog</a>
+                  <div class="footer__ribbon">
+                    <span class="footer__ribbon-text">New</span>
+                  </div>
+                </li>
+                <li class="footer__item"><a>Reviews</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">Shop</a></h3>
+              <ul>
+                <li class="footer__item"><a>Catalogue</a></li>
+                <li class="footer__item"><a>On sale</a></li>
+                <li class="footer__item"><a>Custom orders</a></li>
+                <li class="footer__item"><a>Find the store</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">Services</a></h3>
+              <ul>
+                <li class="footer__item"><a>Privacy Policy</a></li>
+                <li class="footer__item"><a>Accessibility </a></li>
+                <li class="footer__item"><a>Terms and conditions</a></li>
+                <li class="footer__item"><a>Order issues</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">More</a></h3>
+              <ul>
+                <li class="footer__item"><a>Coming soon</a></li>
+                <li class="footer__item"><a>Events</a></li>
+                <li class="footer__item"><a>Gallery</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">Help</a></h3>
+              <ul>
+                <li class="footer__item"><a>Questions</a></li>
+                <li class="footer__item"><a>Contact us</a></li>
+                <li class="footer__item"><a>Find the store</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__legal">
+          <a class="footer__copyright">© 2024 GamexCorp. All rights reserved</a>
+          <a class="footer__legal-item">Privacy Policy</a>
+          <a class="footer__legal-item">Terms and conditions</a>
+        </div>
+        <!-- fropdowns -->
+      </div>
+    </footer>
+    <!-- Fixed popup -->
+    <button>
+      <div class="fixed-popup">
+        <svg class="fixed-popup__icon" width="14" height="14">
+          <use href="/img/symbol-icons.svg#message-icon"></use>
+        </svg>
+        <a class="fixed-popup__text">Have an issue?</a>
+      </div>
+    </button>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden">
+      <div class="modal-window">
+        <div class="modal-window__decor-el"></div>
+        <button class="modal-window__button-close modal-btn-close">
+          <svg class="modal-window__icon" width="34" height="34">
+            <use href="/img/symbol-icons.svg#close-button"></use>
+          </svg>
+        </button>
+        <h2 class="modal-window__title">Log in Form</h2>
+        <p>
+          Not registered yet?
+          <a class="modal-window__link text-jost-regular" href="#">Register</a>
+          now.
+        </p>
+        <form name="login-form" autocomplete="on" action="">
+          <label class="contact-form__label">
+            <span class="contact-form__label-text">Email or Phone number </span>
+            <input
+              class="input contact-form__input"
+              type="text"
+              placeholder="Type in your E-mail or phone ..."
+              required
+            />
+          </label>
+          <label class="contact-form__label">
+            <span class="contact-form__label-text">Password</span>
+            <input
+              class="input contact-form__input"
+              type="password"
+              placeholder="Time to remember your pass..."
+              required
+            />
+          </label>
+          <a class="modal-window__password-reset">Forgot your password?</a>
+          <button
+            type="submit"
+            class="button contact-form__button modal-window__button"
+          >
+            Login
+          </button>
+          <a class="modal-window__guest">Continue as guest</a>
+        </form>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
+    <script src="/js/events-section-slider.js"></script>
+  </body>
+</html>

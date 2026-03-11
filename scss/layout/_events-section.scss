@@ -1,0 +1,139 @@
+.events-section {
+  &__title {
+    margin-bottom: 38px;
+  }
+  &__cards {
+    display: flex;
+    gap: 20px;
+    // height: 380px;
+    margin-bottom: 38px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+  &__text {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__cta {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+}
+
+.event-card {
+  display: grid;
+  cursor: pointer;
+  min-height: 380px;
+  // position: relative;
+  background-position: top left;
+  flex: 1 1 450px; // flex-grow:1, shrink 1 , preffered size 400px
+
+  &__image,
+  &__content {
+    grid-area: 1 / 1; // making both of those items start
+    // at the same sell top left
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    // object-fit: cover;
+  }
+
+  &__content {
+    // transform: (0px);
+    // position: absolute;
+    align-self: end;
+    // height: 166px;
+    height: 170px;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(
+      90deg,
+      rgba(27, 76, 86, 0.3) 0%,
+      rgba(17, 39, 115, 0.3) 100%
+    );
+    border-radius: 10px;
+    padding: 30px 15px 20px 30px;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+  }
+  // &:hover &__content {
+  //   transform: translateY(-40px);
+  // }
+
+  &__price {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 0px 50px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  &__date {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: var(--primary-accent);
+  }
+}
+// .event-card {
+//   display: flex;
+//   min-height: 380px;
+//   max-width: 590px;
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   cursor: pointer;
+//   flex-grow: 1;
+//   flex-basis: calc((100% - 590px - 20px) / 2);
+
+// &--halloween {
+//   background-image: url(/img/event-card-party.jpg);
+// }
+
+// &--festival {
+//   background-image: url(/img/event-card-festival.jpg);
+// }
+
+//   &__description {
+//     margin-bottom: 10px;
+//   }
+//   &__content {
+//     flex-grow: 1;
+//     border-radius: 10px;
+//     margin-top: auto;
+//     padding: 30px 15px 20px 30px;
+
+//     height: 166px;
+//     backdrop-filter: blur(30px);
+//     background: linear-gradient(
+//       90deg,
+//       rgba(27, 76, 86, 0.3) 0%,
+//       rgba(17, 39, 115, 0.3) 100%
+//     );
+//   }
+
+//   &__price {
+//     display: flex;
+//     gap: 20px;
+//   }
+
+//   &__title {
+//     font-weight: 700;
+//     font-size: 28px;
+//     margin-bottom: 14px;
+//   }
+//   &__date {
+//     font-weight: 700;
+//     font-size: 18px;
+//     color: var(--primary-accent);
+//   }
+// }

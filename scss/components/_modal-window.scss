@@ -1,0 +1,99 @@
+.backdrop {
+  background-color: var(--main-bg-color);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  inset: 0;
+  z-index: 3;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-window {
+  width: 100%;
+  position: relative;
+  max-width: 840px;
+  //   max-height: 860px;
+  max-height: calc(100vh - 60px);
+  justify-items: center;
+  background-color: rgba(9, 71, 130, 0.5);
+  border-radius: 18px;
+  padding: 80px 180px;
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+
+    &::before {
+      content: "";
+      background: url(/img/modal-2.svg);
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      background-repeat: no-repeat;
+      bottom: 0px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      background: url(/img/modal-3.svg);
+      position: absolute;
+      width: 178px;
+      height: 160px;
+      background-repeat: no-repeat;
+      right: -50px;
+      bottom: 100px;
+    }
+  }
+  &__decor-el {
+    background: url(/img/modal-1.svg);
+    position: absolute;
+    width: 147px;
+    height: 164px;
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 0;
+  }
+  &__link {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    display: inline-block;
+    margin-bottom: 32px;
+  }
+  &__password-reset {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, #85acfa 0%, #c9e7f8 100%);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+  }
+  &__icon {
+    fill: var(--main-beige);
+  }
+  &__guest {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Jost", sans-serif;
+  }
+  &__button-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  &__button {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

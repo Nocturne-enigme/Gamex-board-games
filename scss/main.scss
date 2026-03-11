@@ -1,0 +1,13 @@
+@use "./base";
+@use "./variables";
+@use "./layout/hero-section";
+@use "./layout/header";
+@use "./layout/categories-section";
+@use "./layout/advertisement-section";
+@use "./layout/popular-games-section";
+@use "./layout/catalogue-section";
+@use "./layout/events-section";
+@use "./layout/contacts-section";
+@use "./layout/footer";
+@use "./components/fixed-popup";
+@use "./components/modal-window";
