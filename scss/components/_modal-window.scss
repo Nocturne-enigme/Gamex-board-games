@@ -9,7 +9,9 @@
   z-index: 3;
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
 }
 
 .modal-window {
@@ -28,7 +30,7 @@
 
     &::before {
       content: "";
-      background: url(/img/modal-2.svg);
+      background: url(../img/modal-2.svg);
       position: absolute;
       width: 140px;
       height: 140px;
@@ -39,7 +41,7 @@
 
     &::after {
       content: "";
-      background: url(/img/modal-3.svg);
+      background: url(../img/modal-3.svg);
       position: absolute;
       width: 178px;
       height: 160px;
@@ -49,7 +51,7 @@
     }
   }
   &__decor-el {
-    background: url(/img/modal-1.svg);
+    background: url(../img/modal-1.svg);
     position: absolute;
     width: 147px;
     height: 164px;

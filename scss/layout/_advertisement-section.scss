@@ -8,9 +8,10 @@
   position: relative;
 }
 .advertisement-card-big {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.44)),
-    url(/img/present-giveaway.png) right 88px bottom -8px / 247px no-repeat,
-    url(/img/advertisement-card-bg.jpg);
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.44)),
+    url(../img/present-giveaway.png) right 88px bottom -8px / 247px no-repeat,
+    url(../img/advertisement-card-bg.jpg);
   max-width: 745px;
   border-radius: 15px;
   padding: 80px;
@@ -33,7 +34,8 @@
   right: 0;
   transform: translateY(-50%);
   max-width: 520px;
-  background: url(/img/icons/promo-order-icon.svg) right 8px bottom 4px / 102px
+  background:
+    url(../img/icons/promo-order-icon.svg) right 8px bottom 4px / 102px
       no-repeat,
     #061b2f;
   padding: 28px;
