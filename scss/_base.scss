@@ -53,6 +53,7 @@ a,
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
+
 ul,
 li,
 ol,
@@ -70,7 +71,7 @@ p {
 // }
 
 a {
-  display: block;
+  display: flex;
 }
 
 // Section styles

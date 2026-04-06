@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamex Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./scss/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li><a class="link" href="index.html#games-section">Games</a></li>
+            <li><a class="link" href="about.html">About</a></li>
+            <li><a class="link" href="index.html#popular-section">Popular</a></li>
+            <li><a class="link" href="index.html#events-section">Events</a></li>
+            <li><a class="link" href="index.html#contact-section">Contact Us</a></li>
+          </ul>
+          <a href="/">
+            <img src="img/website-logo.svg" alt="Gamex Logo" />
+          </a>
+          <!-- Input -->
+          <form class="header__form">
+            <label for="search" class="visually-hidden">Search</label>
+            <div class="header__search">
+              <svg class="header__search-icon" width="20" height="20">
+                <use href="img/symbol-icons.svg#search-icon"></use>
+              </svg>
+              <input
+                class="header__input"
+                id="search"
+                type="search"
+                placeholder="Search..."
+              />
+            </div>
+          </form>
+          <button class="button header__button modal-btn-open" type="button">
+            Log in
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- sections -->
+       <section class="about-section">
+        <div class="container">
+            <div class="about-section__container">
+                <div class="about-section__block">
+                <h1 class="about-section__heading blue-action">About GAMEX</h1>
+                <p class="about-section__slogan">Where dreams find you in your games</p>
+                <p class="about-section__text">Our journey began with a simple passion for board games and a desire to share that passion with the world.</p>
+                <p class="about-section__text">We believe in the power of games to create unforgettable moments, spark creativity, and build connections.</p>
+               <p class="about-section__text">Join us at GAMEX, where every game is an adventure waiting to be played</p> 
+                <button class="about-section__button">
+                <img src="/img/icons/about-button-icon.svg" alt="button icon">
+                <a href="">Learn more</a>
+                </button>
+            </div>
+            <div class="about-section__image">
+                <!-- image -->
+                 <img class="about-section__img" src="/img/about-main.png" alt="Founder Image">
+            </div>
+            </div>
+        </div>
+       </section>
+       <section class="section section-statistics">
+        <div class="container">
+           <div class="section-statistics__data-wrapper">
+             <div class="section-statistics__data-block">
+                <p class="section-statistics__number">30+</p>
+                <p>Active client accounts</p>
+            </div>
+            <div class="section-statistics__data-block">
+                <p class="section-statistics__number">7730+</p>
+                <p>Total orders made</p>
+            </div>
+            <div class="section-statistics__data-block">
+                <p class="section-statistics__number">630+</p>
+                <p>Games amount</p>
+            </div>
+             <div class="section-statistics__data-block section-statistics__data-block--last">
+                <p class="section-statistics__number">7+</p>
+                <p>Years on the market</p>
+            </div>
+           </div>
+        </div>
+       </section>
+       <section class="advantages-section section">
+        <div class="container">
+        <div class="advantages-section__wrapper">
+            <div class="advanteges-section__block">
+            <h2 class="section-title advantages-section__title">Why us?</h2>
+            <p class="advantages-section__text">We believe in the power of games to create unforgettable moments, spark creativity, and build connections. </p>
+            <p class="advantages-section__text">From classic favorites to the latest hits, our mission is to provide you with an exceptional experience.</p>
+            <p class="advantages-section__text">Our carefully curated collection includes everything from timeless classics to the latest innovations, ensuring there's something for every gamer. </p>
+            <p class="advantages-section__text">We're not just selling games, we're fostering a community of fun, connection, and memorable experiences!</p>
+          </div>
+          <div class="advantages-section__image">
+            <img class="advantages-section__img" src="img/advantages-lady.jpg" alt="Lady inspired by Chess">
+            <img class="advantages-section__img" src="img/advantages-guy.jpg" alt="Young man inspired by Chess">
+          </div>
+        </div>
+        </div>
+       </section>
+       <section class="features-section section">
+        <div class="container">
+          <p class="features-section__eyebrow blue-action">We're glad you've asked</p>
+          <h2 class="section-title features-section__title">What else do we offer?</h2>
+          <ul class="features-section__list">
+            <li class="features-section__card">
+                <img class="features-section__card-icon" src="/img/icons/world-icon.svg" alt="world icon">
+               <h3 class="features-section__card-title">Worldwide delivery starting only 10$+</h3>
+               <p class="features-section__card-text">Order any items in our online store for 60$ and get your delivery free </p>
+               <button type="button" class="button features-section__button">Try now</button>
+            </li>
+            <li  class="features-section__card">
+                <img class="features-section__card-icon" src="/img/icons/rocket-icon.svg" alt="world icon">
+               <h3 class="features-section__card-title">Fast Shipments</h3>
+               <p class="features-section__card-text">Expect your delivery within 1-3 days
+              Start your gaming adventure quickly with our reliable service! </p>
+               <button type="button" class="button features-section__button">Try now</button>
+            </li>
+             <li class="features-section__card">
+                <img class="features-section__card-icon" src="/img/icons/gem-icon.svg" alt="world icon">
+               <h3 class="features-section__card-title">Cost efficient</h3>
+               <p class="features-section__card-text">Top-quality board games at unbeatable prices. Enjoy the thrill of gaming without breaking the bank with our carefully curated selection  </p>
+               <button type="button" class="button features-section__button">Try now</button>
+            </li>
+            
+          </ul>
+        </div>
+       </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__signup-wrapper">
+            <div class="footer__signup">
+              <h2 class="footer__title">Sign up for 10% off</h2>
+              <p class="text-jost-regular footer__text">
+                Subscribe to get special offers and deals
+              </p>
+              <form action="">
+                <label for="footer-email" class="visually-hidden">
+                  Email address
+                </label>
+                <div class="footer__input-block">
+                  <input
+                    class="input footer__input"
+                    type="email"
+                    id="footer-email"
+                    name="footer-email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="footer__form-button"
+                    aria-label="Submit email"
+                  >
+                    <svg class="footer__form-icon" width="14" height="14">
+                      <use href="img/symbol-icons.svg#arrow-btn"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="footer__socials">
+              <a href="#">
+                <svg class="footer__socials-icon" width="25" height="25">
+                  <use href="img/symbol-icons.svg#facebook-icon"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__socials-icon" width="25" height="25">
+                  <use href="img/symbol-icons.svg#instagram-icon"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer__socials-icon" width="25" height="25">
+                  <use href="img/symbol-icons.svg#youtube-icon"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__nav-wrapper">
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">About us</a></h3>
+              <ul>
+                <li class="footer__item"><a>Our story</a></li>
+                <li class="footer__item"><a>Made with care</a></li>
+                <li class="footer__item footer__item-ribbon">
+                  <a>Blog</a>
+                  <div class="footer__ribbon">
+                    <span class="footer__ribbon-text">New</span>
+                  </div>
+                </li>
+                <li class="footer__item"><a>Reviews</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">Shop</a></h3>
+              <ul>
+                <li class="footer__item"><a>Catalogue</a></li>
+                <li class="footer__item"><a>On sale</a></li>
+                <li class="footer__item"><a>Custom orders</a></li>
+                <li class="footer__item"><a>Find the store</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">Services</a></h3>
+              <ul>
+                <li class="footer__item"><a>Privacy Policy</a></li>
+                <li class="footer__item"><a>Accessibility </a></li>
+                <li class="footer__item"><a>Terms and conditions</a></li>
+                <li class="footer__item"><a>Order issues</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">More</a></h3>
+              <ul>
+                <li class="footer__item"><a>Coming soon</a></li>
+                <li class="footer__item"><a>Events</a></li>
+                <li class="footer__item"><a>Gallery</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h3 class="footer__nav-title"><a href="#">Help</a></h3>
+              <ul>
+                <li class="footer__item"><a>Questions</a></li>
+                <li class="footer__item"><a>Contact us</a></li>
+                <li class="footer__item"><a>Find the store</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__legal">
+          <a class="footer__copyright">© 2024 GamexCorp. All rights reserved</a>
+          <a class="footer__legal-item">Privacy Policy</a>
+          <a class="footer__legal-item">Terms and conditions</a>
+        </div>
+        <!-- dropdowns -->
+      </div>
+    </footer>
+    <!-- Fixed popup -->
+    <button type="button" id="fixed-popup-btn">
+      <div class="fixed-popup-btn">
+        <svg class="fixed-popup-btn__icon" width="16" height="16">
+          <use href="img/symbol-icons.svg#message-icon"></use>
+        </svg>
+        <a class="fixed-popup-btn__text">Have an issue?</a>
+      </div>
+    </button>
+    <!-- Opened Fixed Popup -->
+    <div class="fixed-popup">
+      <div class="fixed-popup__tab">
+        <div class="fixed-popup__label">
+          <svg class="fixed-popup__tab-icon" width="20" height="20">
+            <use href="img/symbol-icons.svg#message-icon"></use>
+          </svg>
+          <p class="fixed-popup__tab-text">Online Chat</p>
+        </div>
+        <button class="fixed-popup__button-close">
+          <svg width="34" height="34">
+            <use href="img/symbol-icons.svg#close-button"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="fixed-popup__text-block">
+        <h3 class="fixed-popup__heading">Do you still have questions?</h3>
+        <p class="fixed-popup__question">?</p>
+        <p>
+          If you are looking for custom designs or want to find a game that will
+          be perfect for you, talk to us!
+        </p>
+      </div>
+      <form class="fixed-popup__message-form">
+         <input class="fixed-popup__message-input" type="text" placeholder="Send your message ..."></input>
+        <button class="fixed-popup__send-button">
+          <svg width="26" height="26">
+            <use href="img/symbol-icons.svg#arrow-btn"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden">
+      <div class="modal-window">
+        <div class="modal-window__decor-el"></div>
+        <button type="submit" class="modal-window__button-close modal-btn-close">
+          <svg class="modal-window__icon" width="34" height="34">
+            <use href="img/symbol-icons.svg#close-button"></use>
+          </svg>
+        </button>
+        <h2 class="modal-window__title">Log in Form</h2>
+        <p>
+          Not registered yet?
+          <a class="modal-window__link text-jost-regular" href="#">Register</a>
+          now.
+        </p>
+        <form name="login-form" autocomplete="on" action="">
+          <label class="contact-form__label">
+            <span class="contact-form__label-text">Email or Phone number </span>
+            <input
+              class="input contact-form__input"
+              type="text"
+              placeholder="Type in your E-mail or phone ..."
+              required
+            />
+          </label>
+          <label class="contact-form__label">
+            <span class="contact-form__label-text">Password</span>
+            <input
+              class="input contact-form__input"
+              type="password"
+              placeholder="Time to remember your pass..."
+              required
+            />
+          </label>
+          <a class="modal-window__password-reset">Forgot your password?</a>
+          <button
+            type="submit"
+            class="button contact-form__button modal-window__button"
+          >
+            Login
+          </button>
+          <a class="modal-window__guest">Continue as guest</a>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/fixed-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/events-section-slider.js"></script>
+
+  </body>
+</html>

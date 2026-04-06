@@ -1,12 +1,14 @@
-.fixed-popup {
+.fixed-popup-btn {
+  z-index: 2;
   display: flex;
   position: fixed;
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
   background: #fff;
-  max-width: 124px;
-  padding: 7px 14px;
+  // max-width: 124px;
+  max-width: 160px;
+  padding: 8px 16px;
   border-radius: 12px;
   align-items: center;
   gap: 6px;
@@ -22,12 +24,109 @@
     transform: rotate(45deg);
   }
   &__text {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--primary-dark-blue);
   }
 
   &__icon {
     fill: var(--primary-dark-blue);
+  }
+}
+
+.fixed-popup {
+  // position: relative;
+  z-index: 3;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s;
+  //hide the popup
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  max-width: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: var(--primary-dark-blue);
+
+  &__open {
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  &__tab {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+    padding: 18px 36px;
+    background-color: var(--primary-blue);
+  }
+  &__label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &__text-block {
+    text-align: center;
+    align-self: center;
+    max-width: 436px;
+    padding: 20px;
+    top: 50%;
+  }
+  &__tab-icon {
+    fill: var(--primary-dark-blue);
+  }
+  &__tab-text {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-dark-blue);
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  // input styles
+  &__message-input {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+  }
+
+  &__message-input::placeholder {
+    font-size: 18px;
+    color: inherit;
+    font-weight: 400;
+  }
+  &__message-form {
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--secondary-medium-blue);
+    padding: 18px 32px;
+  }
+  &__question {
+    position: absolute;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__button-close {
+    display: flex;
+    padding: 0;
+  }
+  &__send-button {
+    fill: var(--main-beige);
+    display: flex;
   }
 }

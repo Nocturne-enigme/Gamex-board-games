@@ -1,0 +1,21 @@
+.link-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--secondary-card-blue);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  &__svg {
+    fill: var(--main-beige);
+    display: block;
+  }
+}
+
+.link-arrow--game {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}

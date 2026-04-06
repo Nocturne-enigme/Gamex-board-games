@@ -26,6 +26,9 @@
   &:hover {
     background-color: rgba(7, 16, 25, 0.1);
   }
+  &:hover .link-arrow--game {
+    opacity: 1;
+  }
 
   &__block {
     margin-top: auto;

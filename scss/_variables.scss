@@ -4,6 +4,7 @@
   --primary-dark-blue: #103150;
   --primary-blue: #d2f7ff;
   --primary-accent: #ffc736;
+  --secondary-accent: #faaf3e;
   --secondary-border: #bfd9f1;
   --secondary-dark: #272727;
   --secondary-medium-blue: #3d6890;
@@ -12,4 +13,10 @@
   --tetriary-light-green: #74efa5;
   --tetriary-grey: #b9b9b9;
   --tetriary-pale-grey: #9e9e9e;
+  --tetriary-border: rgba(194, 245, 255, 0.5);
+  --navy-blue-gradient: linear-gradient(
+    90deg,
+    rgba(27, 76, 86, 0.3) 0%,
+    rgba(17, 39, 115, 0.3) 100%
+  );
 }

@@ -1,0 +1,26 @@
+.section-statistics {
+  &__data-wrapper {
+    display: flex;
+    // justify-content: space-between;
+    border: 2px solid var(--tetriary-border);
+    border-radius: 10px;
+    background: var(--navy-blue-gradient);
+  }
+
+  &__data-block {
+    text-align: center;
+    padding: 36px 60px;
+    width: calc(100% / 4);
+    border-right: 2px solid var(--tetriary-border);
+
+    &--last {
+      border-right: none;
+    }
+  }
+
+  &__number {
+    color: var(--primary-blue);
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+}

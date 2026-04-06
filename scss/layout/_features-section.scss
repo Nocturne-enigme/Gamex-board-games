@@ -1,0 +1,72 @@
+.features-section {
+  &__eyebrow {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__list {
+    display: flex;
+    gap: 36px;
+    align-items: stretch;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background: var(--navy-blue-gradient);
+    padding: 36px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    max-width: 374px;
+    width: 100%;
+
+    border: 3px solid var(--tetriary-border);
+    overflow: hidden;
+
+    &:hover {
+      //   border: 3px solid rgba(194, 245, 255, 0.5);
+      border-color: rgba(194, 245, 255, 1);
+
+      .features-section__button {
+        //   border: 3px solid rgba(194, 245, 255, 0.5);
+        opacity: 1;
+      }
+    }
+  }
+  &__card-icon {
+    margin-bottom: 32px;
+    width: 56px;
+    height: 56px;
+  }
+  &__card-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__card-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  &__button {
+    // background-color: var(--primary-accent);
+    background-color: var(--primary-blue);
+    color: var(--primary-dark-blue);
+    padding: 10px 76px;
+    font-size: 18px;
+    border: none;
+    margin-top: auto;
+    opacity: 0;
+
+    &:hover {
+      background-color: var(--primary-blue);
+      color: var(--primary-dark-blue);
+    }
+  }
+}
