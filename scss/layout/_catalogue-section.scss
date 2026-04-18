@@ -4,16 +4,61 @@
   }
 
   &__bar {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 50px;
   }
+  &__dropdown-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
+  &__dropdown-btn {
+    fill: var(--main-beige);
+    stroke: 5px;
+    transform: rotate(90deg);
+  }
   &__list {
     display: flex;
     gap: 25px;
   }
 
+  &__sort {
+    background: var(--secondary-medium-blue);
+    // background: var(--primary-dark-blue);
+    // background: var(--tetriary-button-blue);
+    position: absolute;
+    transition: all linear 0.3s;
+    top: 44px;
+    right: 0;
+    font-family: "Raleway";
+    font-weight: 600;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__sort.sort-open {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__sort-item {
+    padding: 12px 28px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--primary-dark-blue);
+    }
+  }
   &__link {
+    font-family: "Raleway";
+    text-transform: capitalize;
     background-color: var(--secondary-medium-blue);
     padding: 10px 20px;
     border-radius: 10px;
@@ -24,16 +69,36 @@
       color: inherit;
     }
   }
+  &__button-more {
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--primary-accent);
+    }
+
+    &--disabled {
+      display: none;
+      pointer-events: none;
+    }
+  }
 }
 
 .product-list {
   display: grid;
+  align-items: stretch;
+  justify-content: center;
   gap: 30px 22px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 .product-card {
   display: grid;
+  height: 100%;
   background-color: var(--secondary-card-blue);
   border-radius: 10px;
   max-width: 320px;
@@ -58,6 +123,7 @@
     &--accent {
       color: var(--tetriary-light-green);
       margin-bottom: 12px;
+      min-height: 16px;
     }
   }
   &__badge-icon {
@@ -117,7 +183,8 @@
   }
 
   &__img {
-    max-height: 170px;
+    // max-height: 170px;
+    max-width: 230px;
     justify-self: center;
   }
   &__bottom-price {

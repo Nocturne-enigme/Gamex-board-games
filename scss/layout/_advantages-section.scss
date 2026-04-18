@@ -1,6 +1,11 @@
 .advantages-section {
   &__wrapper {
     position: relative;
+    display: flex;
+
+    @media screen and (max-width: 1180px) {
+      display: block;
+    }
   }
 
   &__title {
@@ -11,8 +16,17 @@
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 8px;
-  }
 
+    @media screen and (max-width: 1180px) {
+      max-width: 800px;
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 0;
+    gap: 48px;
+  }
   &__img {
     position: absolute;
     bottom: 44px;
@@ -22,10 +36,18 @@
     box-shadow:
       -16px 24px 0px 0px var(--main-bg-color),
       -16px 24px 0px 3px #b4a494;
+
+    @media screen and (max-width: 1180px) {
+      position: static;
+    }
   }
 
   &__img:last-child {
     bottom: 104px;
     right: 0;
+
+    @media screen and (max-width: 1040px) {
+      transform: translateY(-40px);
+    }
   }
 }

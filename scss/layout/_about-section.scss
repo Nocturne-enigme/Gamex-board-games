@@ -1,6 +1,8 @@
 .about-section {
   &__container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     align-items: center;
     padding: 180px 0 40px;
     justify-content: space-between;
@@ -21,10 +23,22 @@
   }
   &__block {
     max-width: 424px;
+    @media screen and (max-width: 1180px) {
+      max-width: 824px;
+    }
   }
   &__text {
     font-size: 20px;
     margin-bottom: 24px;
+  }
+
+  &__image {
+    @media screen and (max-width: 1180px) {
+      margin-left: auto;
+      // box-shadow:
+      //   16px 24px 0px 0px var(--main-bg-color),
+      //   16px 24px 0px 3px #b4a494;
+    }
   }
   &__img {
     border-radius: 8px;

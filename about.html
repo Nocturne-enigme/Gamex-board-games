@@ -6,6 +6,7 @@
     <title>Gamex Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon"  type="image/svg+xml" href="/img/favicon.svg">
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -21,18 +22,31 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <ul class="header__list">
-            <li><a class="link" href="index.html#games-section">Games</a></li>
+          <div class="header__nav-block">
+            <ul class="header__list ">
+            <button class="header__btn-close">
+              <svg width="34" height="34">
+                  <use href="img/symbol-icons.svg#close-button"></use>
+              </svg>
+            </button>
+            <li><a class="link" href="#games-section">Games</a></li>
             <li><a class="link" href="about.html">About</a></li>
-            <li><a class="link" href="index.html#popular-section">Popular</a></li>
-            <li><a class="link" href="index.html#events-section">Events</a></li>
-            <li><a class="link" href="index.html#contact-section">Contact Us</a></li>
+            <li><a class="link" href="#popular-section">Popular</a></li>
+            <li><a class="link" href="#events-section">Events</a></li>
+            <li><a class="link" href="#contact-section">Contact Us</a></li>
           </ul>
-          <a href="/">
+          <button class="header__burger-btn">
+            <svg width="36" height="28">
+                <use href="img/symbol-icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+          </div>
+          <a class="header__logo" href="/">
             <img src="img/website-logo.svg" alt="Gamex Logo" />
           </a>
           <!-- Input -->
-          <form class="header__form">
+         <div class="header__nav-block">
+           <form class="header__form">
             <label for="search" class="visually-hidden">Search</label>
             <div class="header__search">
               <svg class="header__search-icon" width="20" height="20">
@@ -49,12 +63,18 @@
           <button class="button header__button modal-btn-open" type="button">
             Log in
           </button>
+          <button type="button" class="modal-btn-open header__button-login">
+             <svg  width="32" height="32">
+                        <use href="img/symbol-icons.svg#login-icon"></use>
+              </svg>
+          </button>
+         </div>
         </nav>
       </div>
     </header>
     <main>
       <!-- sections -->
-       <section class="about-section">
+       <section class="about-section section">
         <div class="container">
             <div class="about-section__container">
                 <div class="about-section__block">
@@ -74,7 +94,7 @@
             </div>
         </div>
        </section>
-       <section class="section section-statistics">
+       <section class="section-statistics section">
         <div class="container">
            <div class="section-statistics__data-wrapper">
              <div class="section-statistics__data-block">
@@ -99,7 +119,7 @@
        <section class="advantages-section section">
         <div class="container">
         <div class="advantages-section__wrapper">
-            <div class="advanteges-section__block">
+            <div class="advantages-section__block">
             <h2 class="section-title advantages-section__title">Why us?</h2>
             <p class="advantages-section__text">We believe in the power of games to create unforgettable moments, spark creativity, and build connections. </p>
             <p class="advantages-section__text">From classic favorites to the latest hits, our mission is to provide you with an exceptional experience.</p>
@@ -339,6 +359,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+      <script src="/js/header-menu.js"></script>
     <script src="./js/fixed-popup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/events-section-slider.js"></script>

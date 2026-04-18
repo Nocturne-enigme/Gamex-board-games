@@ -3,8 +3,13 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 65px; // for now
     gap: 20px;
+    @media screen and (max-width: 1180px) {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
   }
   &__title {
     font-weight: 700;
@@ -16,6 +21,10 @@
     display: flex;
     gap: 56px;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1180px) {
+      justify-content: flex-start;
+    }
   }
   &__text {
     margin-bottom: 12px;
@@ -84,6 +93,10 @@
     display: flex;
     position: relative;
     margin-bottom: 24px;
+
+    @media (max-width: 1180px) {
+      max-width: 320px;
+    }
   }
 
   &__form-button {

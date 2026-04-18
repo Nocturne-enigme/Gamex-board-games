@@ -1,5 +1,5 @@
 @use "./base";
-@use "./variables";
+@use "./variables" as *;
 @use "./layout/hero-section";
 @use "./layout/header";
 @use "./layout/categories-section";

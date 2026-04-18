@@ -5,6 +5,10 @@
     border: 2px solid var(--tetriary-border);
     border-radius: 10px;
     background: var(--navy-blue-gradient);
+
+    @media screen and (max-width: 1040px) {
+      flex-direction: column;
+    }
   }
 
   &__data-block {
@@ -12,6 +16,12 @@
     padding: 36px 60px;
     width: calc(100% / 4);
     border-right: 2px solid var(--tetriary-border);
+
+    @media screen and (max-width: 1040px) {
+      width: 100%;
+      border-right: none;
+      border-bottom: 2px solid var(--tetriary-border);
+    }
 
     &--last {
       border-right: none;

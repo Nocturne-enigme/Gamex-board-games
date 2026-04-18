@@ -12,6 +12,10 @@
     display: flex;
     gap: 36px;
     align-items: stretch;
+
+    @media screen and (max-width: 1040px) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -28,6 +32,9 @@
 
     border: 3px solid var(--tetriary-border);
     overflow: hidden;
+    @media screen and (max-width: 1040px) {
+      max-width: 100%;
+    }
 
     &:hover {
       //   border: 3px solid rgba(194, 245, 255, 0.5);
@@ -41,8 +48,8 @@
   }
   &__card-icon {
     margin-bottom: 32px;
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
   }
   &__card-title {
     font-size: 24px;
