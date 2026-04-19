@@ -22,6 +22,11 @@
     font-weight: 600;
     font-size: 22px;
     text-transform: uppercase;
+
+    @media (max-width: 708px) {
+      gap: 0;
+      font-size: 18px;
+    }
   }
 }
 
@@ -38,6 +43,10 @@
 .swiper-slide {
   height: 370px;
   // flex: 1 1 450px;
+
+  @media (max-width: 1040px) {
+    max-width: 620px;
+  }
 }
 
 .slider-button-next,
@@ -54,11 +63,25 @@
 }
 
 .slider-button-prev {
-  left: -46px;
+  left: -40px;
+
+  @media (max-width: 1180px) {
+    left: -32px;
+  }
+  // @media (max-width: 1040px) {
+  //   left: -30px;
+  // }
 }
 
 .slider-button-next {
-  right: -46px;
+  right: -40px;
+
+  @media (max-width: 1180px) {
+    right: -32px;
+  }
+  // @media (max-width: 1040px) {
+  //   right: -26px;
+  // }
 }
 .slider-icon-left {
   transform: rotate(180deg);

@@ -5,6 +5,7 @@
   background-color: var(--secondary-card-blue);
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   display: flex;
   &__svg {
     fill: var(--main-beige);

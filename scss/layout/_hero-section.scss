@@ -20,6 +20,10 @@
       text-align: center;
       margin: 0 auto;
     }
+
+    @media (max-width: 708px) {
+      padding: 200px 0 120px;
+    }
   }
 
   &__title {
@@ -49,7 +53,11 @@
       max-height: 25px;
     }
   }
-
+  &__cards {
+    @media (max-width: 708px) {
+      display: none;
+    }
+  }
   &__card-stories {
     top: 205px;
     right: 260px;

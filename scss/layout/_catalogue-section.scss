@@ -6,9 +6,15 @@
   &__bar {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+
+    @media (max-width: 708px) {
+      margin-bottom: 18px;
+    }
   }
   &__dropdown-text {
     display: flex;
@@ -25,7 +31,12 @@
   }
   &__list {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @media (max-width: 708px) {
+      gap: 18px;
+    }
   }
 
   &__sort {
@@ -103,6 +114,10 @@
   border-radius: 10px;
   max-width: 320px;
   padding: 20px;
+
+  @media (max-width: 708px) {
+    max-width: 340px;
+  }
 
   &__label {
     display: flex;

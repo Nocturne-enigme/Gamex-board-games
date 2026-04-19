@@ -114,10 +114,15 @@
 
   &__legal {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     font-weight: 400;
     font-size: 12px;
     justify-content: center;
+
+    @media (max-width: 708px) {
+      justify-content: center;
+    }
   }
 
   &__legal-item {

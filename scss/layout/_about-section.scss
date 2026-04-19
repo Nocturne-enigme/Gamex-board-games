@@ -4,8 +4,12 @@
     flex-wrap: wrap;
     gap: 24px;
     align-items: center;
-    padding: 180px 0 40px;
+    padding: 140px 0 40px;
     justify-content: space-between;
+
+    @media screen and (max-width: 708px) {
+      padding: 140px 0 20px;
+    }
   }
 
   &__heading {
@@ -46,6 +50,14 @@
     box-shadow:
       -16px 24px 0px 0px var(--main-bg-color),
       -16px 24px 0px 3px #b4a494;
+
+    @media screen and (max-width: 708px) {
+      max-width: 480px;
+    }
+
+    @media screen and (max-width: 540px) {
+      max-width: 340px;
+    }
   }
 
   &__button {

@@ -1,4 +1,10 @@
 .advertisement-section {
+  @media screen and (max-width: 1040px) {
+    padding-bottom: 260px; // 220px + 40px (missing)
+  }
+  @media screen and (max-width: 708px) {
+    padding-bottom: 40px;
+  }
   &__title {
     margin-bottom: 32px;
   }
@@ -15,6 +21,14 @@
   max-width: 745px;
   border-radius: 15px;
   padding: 80px;
+
+  @media screen and (max-width: 708px) {
+    padding: 54px;
+    margin-bottom: 24px;
+  }
+  @media screen and (max-width: 504px) {
+    padding: 54px 24px;
+  }
 
   &__text {
     // font-family: "Jost", sans-serif;
@@ -42,6 +56,19 @@
   background-repeat: no-repeat;
   border-radius: 15px;
 
+  @media screen and (max-width: 1040px) {
+    bottom: -220px;
+    top: auto;
+    right: 0;
+    transform: translateY(0);
+  }
+  @media screen and (max-width: 708px) {
+    position: static;
+    // top: calc(100% + 24px);
+    // margin-bottom: 24px;
+    // bottom: auto;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 28px;
@@ -61,5 +88,11 @@
   &__block {
     display: flex;
     gap: 50px;
+
+    @media screen and (max-width: 540px) {
+      gap: 24px;
+      flex-direction: column-reverse;
+      width: 200px;
+    }
   }
 }

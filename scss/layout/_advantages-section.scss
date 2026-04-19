@@ -26,6 +26,12 @@
     justify-content: flex-end;
     padding: 40px 0;
     gap: 48px;
+
+    @media screen and (max-width: 540px) {
+      flex-direction: column;
+      padding: 20px 0 0;
+      gap: 88px;
+    }
   }
   &__img {
     position: absolute;
@@ -40,14 +46,21 @@
     @media screen and (max-width: 1180px) {
       position: static;
     }
+
+    @media screen and (max-width: 708px) {
+      max-width: 214px;
+    }
   }
 
   &__img:last-child {
     bottom: 104px;
     right: 0;
 
-    @media screen and (max-width: 1040px) {
+    @media screen and (max-width: 1180px) {
       transform: translateY(-40px);
+    }
+    @media screen and (max-width: 540px) {
+      margin-left: auto;
     }
   }
 }
